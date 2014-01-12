@@ -1,0 +1,63 @@
+
+.main-view .user-form {
+}
+
+.main-view .user-form .data-section {
+	
+}
+
+.main-view .user-form .data-section .add-btn {
+	margin-left: 60px;
+    width: 170px;
+}
+ 
+.main-view .user-form  input, select, textarea{
+    width: 260px;
+    height: 24px;
+    margin-top: 25px;
+    text-align: center;
+    background: #DFEAF2; /* browsers that don't support rgba */
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    border: 1px solid #3d3d3d; /* browsers that don't support rgba */
+    border: 1px solid #DFEAF2;
+    -moz-box-shadow: 0 2px 3px 0 rgba(0,0,0,.1) inset;
+    -webkit-box-shadow: 0 2px 3px 0 rgba(0,0,0,.1) inset;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.1) inset;
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: black;
+    text-shadow: 0 1px 2px rgba(0,0,0,.1);
+    -o-transition: all .2s;
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+    -ms-transition: all .2s;
+}
+
+.main-view .user-form label {
+	float: left;
+    width: 100px;
+}
+
+
+.main-view .user-form textarea {
+	height: 70px;
+}
+
+.main-view .user-form  input:-moz-placeholder { color: #fff; }
+.main-view .user-form  input:-ms-input-placeholder { color: #fff; }
+.main-view .user-form  input::-webkit-input-placeholder { color: #fff; }
+
+.main-view .user-form  input, select, textarea {
+    outline: none;
+    -moz-box-shadow:
+        0 2px 3px 0 rgba(0,0,0,.1) inset,
+        0 2px 7px 0 rgba(0,0,0,.2);
+    -webkit-box-shadow:
+        0 2px 3px 0 rgba(0,0,0,.1) inset,
+        0 2px 7px 0 rgba(0,0,0,.2);
+    box-shadow:
+        0 2px 3px 0 rgba(0,0,0,.1) inset,
+        0 2px 7px 0 rgba(0,0,0,.2);
+}

@@ -1,0 +1,12 @@
+.main-view .chart-container {
+	float: left;
+	padding: 30px;	
+}
+
+.main-view .chart-container div {
+	margin: 4px;
+}
+
+.main-view .chart-performance {
+	
+}

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<tiles-definitions>
+
+	<definition name="telecom.login" template="/WEB-INF/views/login/login.jsp"/>
+
+	<definition name="telecom.base.definition" template="/WEB-INF/views/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/views/common/header.jsp" />
+		<put-attribute name="telecom-header" value="/WEB-INF/views/common/telecom-header.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/views/common/footer.jsp" />
+	</definition>
+	
+	<definition name="telecom.main.view" extends="telecom.base.definition">
+		<put-attribute name="body" value="/WEB-INF/views/event/main-view.jsp" />
+	</definition>
+	
+	<definition name="telecom.event.create" template="/WEB-INF/views/event/create-event.jsp"/>
+	
+	<definition name="telecom.event.consult" template="/WEB-INF/views/event/consult-event.jsp"/>
+	
+	<definition name="telecom.event.search" template="/WEB-INF/views/event/search-event.jsp"/>
+	
+	<definition name="telecom.save.success" template="/WEB-INF/views/common/save-success.jsp"/>
+	
+	<definition name="telecom.chart.cause" template="/WEB-INF/views/chart/chart-cause.jsp"/>
+	
+	<definition name="telecom.chart.piece" template="/WEB-INF/views/chart/chart-piece.jsp"/>
+	
+	<definition name="telecom.chart.agent" template="/WEB-INF/views/chart/chart-agent.jsp"/>
+	
+	<definition name="telecom.chart.site" template="/WEB-INF/views/chart/chart-site.jsp"/>
+	
+	<definition name="telecom.chart.local" template="/WEB-INF/views/chart/chart-local.jsp"/>
+	
+	<definition name="telecom.chart.performance" template="/WEB-INF/views/chart/chart-performance.jsp"/>
+	
+	<definition name="telecom.site.create" template="/WEB-INF/views/site/create-site.jsp"/>
+	
+	<definition name="telecom.site.consult" template="/WEB-INF/views/site/consult-site.jsp"/>
+	
+	<definition name="telecom.local.create" template="/WEB-INF/views/local/create-local.jsp"/>
+	
+	<definition name="telecom.local.consult" template="/WEB-INF/views/local/consult-local.jsp"/>
+	
+	<definition name="telecom.user.create" template="/WEB-INF/views/user/create-user.jsp"/>
+	
+	<definition name="telecom.user.consult" template="/WEB-INF/views/user/consult-user.jsp"/>
+	
+	<definition name="telecom.piece.create" template="/WEB-INF/views/piece/create-piece.jsp"/>
+	
+	<definition name="telecom.piece.consult" template="/WEB-INF/views/piece/consult-piece.jsp"/>
+	
+</tiles-definitions>

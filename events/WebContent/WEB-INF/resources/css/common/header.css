@@ -1,0 +1,32 @@
+.conn-data {
+	color: white;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.conn-data a {
+	color: white;
+}
+
+.conn-data .conn-data-icon {
+	background: url("../../images/administrator_48x48.png") no-repeat transparent;
+	float: left;
+    height: 50px;
+    width: 45px;
+}
+
+.conn-data .conn-data-usr {
+}
+
+.conn-data .conn-data-info {
+	float: left;
+	padding-left: 20px;
+}
+
+.conn-data .conn-data-action{
+	float: left;
+	padding-left: 20px;
+}
+.telecom-logo {
+	/*background: url("../../images/tunisie_telecom1.jpg") no-repeat transparent;*/
+}

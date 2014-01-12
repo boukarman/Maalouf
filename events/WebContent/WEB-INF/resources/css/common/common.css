@@ -1,0 +1,35 @@
+.footer-style {
+	
+}
+
+.header-style {
+	
+}
+
+.body-style {
+	height: 580px;
+}
+
+.save-success {
+	background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px 4px 4px 4px;
+    margin: 15px 0;
+    padding: 39px 19px 14px;
+    position: relative;
+}
+
+.save-success .alert {
+    background-color: #BCE8F1;
+    border: 1px solid #FBEED5;
+    border-radius: 4px 4px 4px 4px;
+    font-family: cursive;
+    font-size: large;
+    margin-bottom: 20px;
+    padding: 8px 35px 8px 14px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.hidden {
+	visibility: hidden;
+}
