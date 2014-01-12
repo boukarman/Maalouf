@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- DispatcherServlet Context: defines this servlet's request-processing 
+		infrastructure -->
+	<mvc:view-controller path="/" view-name="index"/>
+	<!-- Enables the Spring MVC @Controller programming model -->
+	<!-- JSR-303 support will be detected on classpath and enabled automatically -->
+	<!-- Spring MVC will automatically register default formatters and converters 
+		for common types such as numbers and dates. -->
+	<mvc:annotation-driven />
+
+	<!-- Maps '/' requests to the 'home' view -->
+	<!-- Use it in static cases when there is no Java Controller logic to execute 
+		before the view generates the response. -->
+
+	<!-- Handles HTTP GET requests for /resources/** by efficiently serving 
+		up static resources in the ${webappRoot}/WEB-INF/resources directory with 
+		the ability to set expiration headers so that they'd be more efficiently 
+		utilized by the client -->
+	<!-- set cache-period="30758400" for one year -->
+	<!-- set cache-period="0" to prevent caching -->
+	<mvc:resources mapping="/resources/**" location="/WEB-INF/resources/"
+		cache-period="0" />
+
+	<bean
+		class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+		<property name="exceptionMappings">
+			<props>
+				<prop key="java.lang.Exception">unhandled-exception</prop>
+			</props>
+		</property>
+	</bean>
+
+	<!-- Resolver for other eventual views than tiles ones -->
+	<bean id="jspViewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="viewClass"
+			value="org.springframework.web.servlet.view.JstlView" />
+		<property name="prefix" value="/WEB-INF/views/" />
+		<property name="suffix" value=".jsp" />
+		<property name="order" value="10" />
+	</bean>
+
+	<!-- lets use the Commons-based implementation of the MultipartResolver 
+		interface -->
+	<bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver" />
+		
+	<!-- Imports user-defined @Controller beans that process client requests -->
+	<import resource="controllers.xml" />
+
+</beans>
